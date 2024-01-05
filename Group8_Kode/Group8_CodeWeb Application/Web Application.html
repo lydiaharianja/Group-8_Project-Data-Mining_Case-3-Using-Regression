@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Web Application.css">
+    <title>projek dami</title>
+</head>
+<body>
+
+    <header>
+        <h1>Projek Penambangan Data</h1>
+        <p> Predicting Patient Cost to Fasilitas Kesehatan Tahap Pertama(FKTP) with Linear Regression </p>
+    </header>
+
+    <section class="form-section">
+        <h2> Prediksi Biaya Pasien untuk Tahap Pertama (FKTP) </h2>
+        <form action="#" method="post" id="predictionForm">
+            <label for="Jenis Faskes">Jenis Faskes</label>
+            <input type="text" id="JenisFaskes" name="JenisFaskes" required>
+
+            <label for="Tipe Faskes">Tipe Faskes</label>
+            <input type="text" id="TipeFaskes" name="TipeFaskes" required>
+
+            <label for="Tingkat Layanan">Nama Tindakan</label>
+            <input type="text" id="TingkatLayanan" name="TingkatLayanan" required>
+
+            <label for="NamaTindakan">Tingkat Layanan</label>
+            <select id="NamaTindakan" name="NamaTindakan" required>
+                <option value="RITP">RITP</option>
+                <option value="RJTP">RJTP</option>
+                <option value="PROMOTIF">PROMOTIF</option>
+            </select>
+
+            <button type="button" onclick="showCost()">Tampilkan Biaya</button>
+        </form>
+    </section>
+
+    <!-- Tambahkan bagian untuk menampilkan informasi biaya -->
+    <section class="result-section">
+        <h2>Biaya Pasien</h2>
+        <p id="totalCost">Total Biaya: Rp 0</p>
+    </section>
+
+    <script>
+        function showCost() {
+            var jenisFaskes = document.getElementById("JenisFaskes").value;
+            var tipeFaskes = document.getElementById("TipeFaskes").value;
+            var tingkatLayanan = document.getElementById("TingkatLayanan").value;
+            var namaTindakan = document.getElementById("NamaTindakan").value;
+
+            // Logika penghitungan biaya sesuai kebutuhan
+            var calculatedCost = hitungBiaya(jenisFaskes, tipeFaskes, tingkatLayanan, namaTindakan);
+
+            document.getElementById("totalCost").innerText = "Total Biaya: " + calculatedCost;
+        }
+
+        // Contoh logika penghitungan biaya, sesuaikan dengan kebutuhan proyek
+        function hitungBiaya(jenisFaskes, tipeFaskes, tingkatLayanan, namaTindakan) {
+            // Implementasikan logika penghitungan biaya sesuai kebutuhan proyek
+            // Contoh: return 100000 + 50000;
+            return "Rp 114.000"; // Gantilah dengan logika penghitungan biaya yang sesuai
+        }
+    </script>
+
+</body>
+</html>

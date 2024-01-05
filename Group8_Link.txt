@@ -1,0 +1,10 @@
+Kelompok 8
+Prediksi Biaya Pasien pada Fasilitas Kesehatan Tingkat Pertama (FKTP) menggunakan Algoritma Regresi Multi Linear
+OLEH: 
+12S20013	Lydia Tesalonika
+12S20020	Wahyu Krisdangolyanti Simamora
+12S20053	Andri Anjelia Hutapea
+
+Link Presentasi dan Demo: https://youtu.be/6zQeGRHIZig 
+
+Link Github: https://github.com/lydiaharianja/Group-8_Project-Data-Mining_Case-3-Using-Regression 
